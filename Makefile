@@ -151,6 +151,7 @@ clean:
 install: $(EXECUTABLE)
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	cp $< $(DESTDIR)$(PREFIX)/bin/$(EXECUTABLE)
+	ln -sf $(DESTDIR)$(PREFIX)/bin/$(EXECUTABLE) $(DESTDIR)$(PREFIX)/bin/corsairlink
 
 .PHONY: uninstall
 uninstall:
