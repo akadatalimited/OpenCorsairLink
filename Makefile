@@ -23,11 +23,13 @@ CC ?= gcc
 # CFLAGS ?=
 CFLAGS += -std=c99
 # CFLAGS += -pedantic-errors
-CFLAGS += -Iinclude
+CFLAGS += -Iinclude -I/usr/include/libusb-1.0
 # CFLAGS += -D_XOPEN_SOURCE=500
 CFLAGS += -g
 
 LDFLAGS += -lm
+LDFLAGS += -lusb-1.0
+LDFLAGS += $(shell pkg-config --libs libusb-1.0)
 
 # pkg-config for libusb-1.0
 CFLAGS += $(shell pkg-config --cflags libusb-1.0)

@@ -19,7 +19,7 @@
 #ifndef _DRIVER_H
 #define _DRIVER_H
 
-#include <libusb.h>
+#include <libusb-1.0/libusb.h>
 
 struct corsair_lowlevel_driver
 {
