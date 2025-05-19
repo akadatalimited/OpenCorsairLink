@@ -68,6 +68,10 @@ psu_settings(
 int
 main( int argc, char* argv[] )
 {
+    if (argc == 1) {
+        options_print();
+        return 0;
+    }
     int rr; // result from libusb functions
 
     int8_t device_number = -1;

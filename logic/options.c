@@ -81,6 +81,13 @@ options_parse(
             flags->set_pump = 1;
             pump_suboptions_parse( optarg, &settings->pump_ctrl );
             break;
+        case OPTION_STATUS:
+            flags->show_status = 1;
+            break;
+
+        case OPTION_JSON:
+            flags->show_json = 1;
+            break;
 
         case OPTION_HELP:
         default:
@@ -103,6 +110,8 @@ options_print( void )
     msg_info( "\t--debug\t\t\t\t:Displays enhanced Debug Messages.\n" );
     msg_info( "\t--dump\t\t\t\t:Implies --debug. Dump the raw data recieved from the device.\n" );
     msg_info( "\t--machine\t\t\t:Prints statuses in Machine Readable Format.\n" );
+    msg_info( "\t--status\t\t\t:Prints readable PSU telemetry output.\n" );
+    msg_info( "\t--json\t\t\t\t:Prints PSU telemetry as JSON.\n" );
     msg_info( "\t--device <Device Number>\t:Select device.\n" );
 
     msg_info( "\n\tLED:\n" );
