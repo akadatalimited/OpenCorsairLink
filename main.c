@@ -109,7 +109,22 @@ main( int argc, char* argv[] )
         {
             if ( scanlist[device_number].device->driver == &corsairlink_driver_rmi )
             {
-                psu_settings( scanlist[device_number], flags, settings );
+                if (flags.show_status && !flags.show_json) {    
+                // Just human-readable    
+                    psu_status_print(scanlist[device_number]);
+                } else if (flags.show_json && !flags.show_status) {    
+                // Just JSON    
+                    psu_status_json(scanlist[device_number]);
+                } else if (flags.show_status && flags.show_json) {    
+                // Both, but in a clean order    
+                    psu_status_print(scanlist[device_number]);    
+                    printf("\n");  // spacing    
+                    psu_status_json(scanlist[device_number]);
+                } else {    
+                // Default full telemetry with vendor/product/firmware    
+                    psu_settings(scanlist[device_number], flags, settings);
+                }
+
             }
             else if ( scanlist[device_number].device->driver == &corsairlink_driver_commanderpro )
             {

@@ -56,7 +56,8 @@ MAINLOGIC_SOURCE := \
 	logic/settings/hydro_asetekpro.c \
 	logic/settings/hydro_coolit.c \
 	logic/settings/hydro_platinum.c \
-	logic/settings/psu.c
+	logic/settings/psu.c \
+	logic/settings/psu_status_output.c
 
 DRIVER_SOURCE := \
 	drivers/asetek.c \
