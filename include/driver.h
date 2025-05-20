@@ -21,7 +21,6 @@
 
 #include <libusb-1.0/libusb.h>
 
-
 struct corsair_lowlevel_driver
 {
     /** device communication helper functions */
