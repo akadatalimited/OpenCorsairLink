@@ -16,13 +16,6 @@
  * along with OpenCorsairLink.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "logic/scan.h"
-
-#include "common.h"
-#include "device.h"
-#include "driver.h"
-#include "logic/print.h"
-
 #include <errno.h>
 #include <getopt.h>
 #include <libusb.h>
@@ -31,8 +24,19 @@
 #include <string.h>
 #include <unistd.h>
 
+#include "common.h"
+#include "device.h"
+#include "driver.h"
+
+#include "logic/options.h"
+#include "logic/print.h"
+#include "logic/scan.h"
+
+
+
 int scanlist_count = 0;
 struct corsair_device_scan scanlist[10];
+
 
 int
 corsairlink_handle_close( struct libusb_device_handle* handle )
@@ -64,8 +68,9 @@ corsairlink_close( libusb_context* context )
     return 0;
 }
 
-int
-corsairlink_device_scanner( libusb_context* context, int* _scanlist_count )
+
+int 
+corsairlink_device_scanner(libusb_context* context, int* _scanlist_count, struct option_flags flags)
 {
     int rr; // This could be safely ignored. It is just a success flag for
             // libusb functions.
@@ -126,9 +131,10 @@ corsairlink_device_scanner( libusb_context* context, int* _scanlist_count )
                          * of the device connections
                          */
                         scanlist[scanlist_count].device = device;
-                        msg_info(
-                            "Dev=%d, CorsairLink Device Found: %s!\n", scanlist_count,
-                            device->name );
+                        if ( !flags.show_json )
+                            msg_info(
+                                "Dev=%d, CorsairLink Device Found: %s!\n", scanlist_count,
+                                device->name );
                         scanlist_count++;
                         break;
                     }
@@ -147,7 +153,8 @@ corsairlink_device_scanner( libusb_context* context, int* _scanlist_count )
             }
         }
     }
-    msg_info( "\n" );
+    if ( !flags.show_json )
+        msg_info( "\n" );
     *_scanlist_count = scanlist_count;
     /* End: scan code */
 

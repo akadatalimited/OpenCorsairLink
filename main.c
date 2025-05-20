@@ -21,6 +21,7 @@
 #include "logic/options.h"
 #include "logic/scan.h"
 #include "logic/print.h"
+#include "logic/psu_status_output.h"
 
 #include <errno.h>
 #include <libusb.h>
@@ -28,6 +29,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+
 
 int
 commanderpro_settings(
@@ -93,7 +95,7 @@ main( int argc, char* argv[] )
     }
     // rr = libusb_set_option( context, LIBUSB_OPTION_LOG_LEVEL, 2 );
 
-    corsairlink_device_scanner( context, &scanlist_count );
+    corsairlink_device_scanner( context, &scanlist_count, flags );
     msg_debug( "DEBUG: scan done, start routines\n" );
     msg_debug( "DEBUG: selected device_number = %d\n", device_number );
 
