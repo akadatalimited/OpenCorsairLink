@@ -1,0 +1,2034 @@
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o main.o main.c
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o device.o device.c
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o logic/print.o logic/print.c
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o logic/scan.o logic/scan.c
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o logic/settings/psu.o logic/settings/psu.c
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o logic/settings/psu_status_output.o logic/settings/psu_status_output.c
+In file included from main.c:20:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o drivers/platinum.o drivers/platinum.c
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+In file included from device.c:21:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o drivers/rmi.o drivers/rmi.c
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o drivers/unsupported.o drivers/unsupported.c
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o protocol/platinum/core.o protocol/platinum/core.c
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o protocol/platinum/crc.o protocol/platinum/crc.c
+In file included from logic/settings/psu.c:20:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o protocol/platinum/temperature.o protocol/platinum/temperature.c
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+In file included from logic/settings/psu_status_output.c:6:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o protocol/rmi/core.o protocol/rmi/core.c
+In file included from drivers/platinum.c:19:
+include/driver.h:46:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   46 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:52:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   52 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:58:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   58 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:64:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   64 |         struct corsair_device_info* dev, struct libusb_device_handle* handle, uint16_t* device_id );
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:67:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:75:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   75 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:81:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   81 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:89:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   89 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:94:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   94 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:99:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   99 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:104:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  104 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:109:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  109 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:114:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  114 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:122:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  122 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:129:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  129 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:134:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  134 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:139:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  139 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:144:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  144 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:149:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  149 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:154:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  154 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:159:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  159 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:164:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  164 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:169:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  169 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:174:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  174 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:179:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  179 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o protocol/rmi/power.o protocol/rmi/power.c
+include/driver.h:185:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  185 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:197:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  197 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:202:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  202 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:207:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  207 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:212:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  212 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+In file included from drivers/rmi.c:19:
+include/driver.h:46:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   46 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:52:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   52 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:217:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  217 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:58:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   58 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:64:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   64 |         struct corsair_device_info* dev, struct libusb_device_handle* handle, uint16_t* device_id );
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:67:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:75:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   75 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:81:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   81 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:222:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  222 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:89:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   89 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:94:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   94 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:227:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  227 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:99:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   99 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:104:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  104 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:109:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  109 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:233:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  233 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:114:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  114 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:241:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  241 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, double* volts );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:122:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  122 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:244:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  244 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, double* watts );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:129:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  129 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:247:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  247 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:134:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  134 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:252:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  252 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:139:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  139 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:258:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  258 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:144:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  144 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:264:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  264 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:149:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  149 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:154:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  154 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:273:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  273 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, uint32_t* v32 );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:276:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  276 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, uint32_t* v32 );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:159:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  159 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:164:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  164 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:169:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  169 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:174:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  174 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:179:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  179 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o protocol/rmi/temperature.o protocol/rmi/temperature.c
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:185:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  185 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+In file included from drivers/unsupported.c:19:
+include/driver.h:46:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   46 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:52:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   52 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:58:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   58 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:64:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   64 |         struct corsair_device_info* dev, struct libusb_device_handle* handle, uint16_t* device_id );
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:197:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  197 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:67:16: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   67 |         struct corsair_device_info* dev,
+      |                ^~~~~~~~~~~~~~~~~~~
+include/driver.h:75:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   75 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:81:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   81 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:202:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  202 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:89:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   89 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:94:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   94 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+In file included from logic/settings/psu_status_output.c:10:
+include/logic/scan.h:37:86: warning: ‘struct option_flags’ declared inside parameter list will not be visible outside of this definition or declaration
+   37 | int corsairlink_device_scanner(libusb_context* context, int* _scanlist_count, struct option_flags flags);
+      |                                                                                      ^~~~~~~~~~~~
+include/driver.h:207:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  207 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:99:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   99 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:104:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  104 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+In file included from drivers/platinum.c:23:
+include/protocol/platinum.h:175:12: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  175 |     struct led_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:196:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  196 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:109:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  109 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:212:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  212 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/protocol/platinum.h:202:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  202 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:208:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  208 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:214:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:114:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  114 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/protocol/platinum.h:220:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  220 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:226:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  226 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:232:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  232 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:217:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  217 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:122:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  122 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/protocol/platinum.h:238:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  238 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:244:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  244 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/protocol/platinum.h:250:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  250 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:129:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  129 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/protocol/platinum.h:256:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  256 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:222:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  222 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/protocol/platinum.h:262:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  262 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:134:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  134 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/protocol/platinum.h:268:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  268 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:279:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  279 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:139:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  139 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/protocol/platinum.h:285:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  285 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:227:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  227 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:291:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  291 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:144:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  144 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/protocol/platinum.h:297:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  297 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+include/driver.h:149:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  149 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/protocol/platinum.h:303:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  303 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+In file included from logic/scan.c:29:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:233:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  233 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:309:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  309 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:315:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  315 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:154:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  154 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:241:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  241 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, double* volts );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:321:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  321 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:159:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  159 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/protocol/platinum.h:327:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  327 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:244:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  244 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, double* watts );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:247:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  247 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:33:13: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} [-Wincompatible-pointer-types]
+   33 |     .name = corsairlink_platinum_name,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+include/driver.h:164:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  164 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:33:13: note: (near initialization for ‘corsairlink_driver_platinum.name’)
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/platinum.c:34:15: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} [-Wincompatible-pointer-types]
+   34 |     .vendor = corsairlink_platinum_vendor,
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:34:15: note: (near initialization for ‘corsairlink_driver_platinum.vendor’)
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/platinum.c:35:16: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} [-Wincompatible-pointer-types]
+   35 |     .product = corsairlink_platinum_product,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:35:16: note: (near initialization for ‘corsairlink_driver_platinum.product’)
+include/driver.h:252:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  252 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/platinum.c:36:18: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint16_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, short unsigned int *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint16_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, short unsigned int *)’} [-Wincompatible-pointer-types]
+   36 |     .device_id = corsairlink_platinum_device_id,
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:36:18: note: (near initialization for ‘corsairlink_driver_platinum.device_id’)
+include/driver.h:169:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  169 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:37:19: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} [-Wincompatible-pointer-types]
+   37 |     .fw_version = corsairlink_platinum_firmware_id,
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:37:19: note: (near initialization for ‘corsairlink_driver_platinum.fw_version’)
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/platinum.c:40:21: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} [-Wincompatible-pointer-types]
+   40 |             .read = corsairlink_platinum_temperature,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:40:21: note: (near initialization for ‘corsairlink_driver_platinum.temperature.read’)
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:258:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  258 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:41:22: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char *)’} [-Wincompatible-pointer-types]
+   41 |             .count = corsairlink_platinum_tempsensorscount,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:41:22: note: (near initialization for ‘corsairlink_driver_platinum.temperature.count’)
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:174:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  174 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:54:22: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct fan_control *)’ from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct fan_control *)’ [-Wincompatible-pointer-types]
+   54 |             .count = corsairlink_platinum_fan_count,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:54:22: note: (near initialization for ‘corsairlink_driver_platinum.fan.count’)
+drivers/platinum.c:57:37: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct fan_control *)’ from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct fan_control *)’ [-Wincompatible-pointer-types]
+   57 |                     .read_profile = corsairlink_platinum_fan_mode_read,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/platinum.c:57:37: note: (near initialization for ‘corsairlink_driver_platinum.fan.profile.read_profile’)
+include/driver.h:264:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  264 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/platinum.c:58:33: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct fan_control *)’ from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct fan_control *)’ [-Wincompatible-pointer-types]
+   58 |                     .read_rpm = corsairlink_platinum_fan_mode_read_rpm,
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:58:33: note: (near initialization for ‘corsairlink_driver_platinum.fan.profile.read_rpm’)
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/platinum.c:69:22: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct fan_control *)’ from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct fan_control *)’ [-Wincompatible-pointer-types]
+   69 |             .speed = corsairlink_platinum_fan_speed,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:69:22: note: (near initialization for ‘corsairlink_driver_platinum.fan.speed’)
+include/driver.h:179:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  179 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:76:37: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct pump_control *)’ from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct pump_control *)’ [-Wincompatible-pointer-types]
+   76 |                     .read_profile = corsairlink_platinum_pump_mode_read,
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:76:37: note: (near initialization for ‘corsairlink_driver_platinum.pump.profile.read_profile’)
+include/driver.h:273:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  273 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, uint32_t* v32 );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+drivers/platinum.c:85:22: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct pump_control *)’ from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, struct pump_control *)’ [-Wincompatible-pointer-types]
+   85 |             .speed = corsairlink_platinum_pump_speed,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/platinum.c:85:22: note: (near initialization for ‘corsairlink_driver_platinum.pump.speed’)
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:276:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  276 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, uint32_t* v32 );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:185:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  185 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:197:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  197 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o protocol/rmi/time.o protocol/rmi/time.c
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:202:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  202 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:207:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  207 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:212:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  212 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:217:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  217 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+In file included from drivers/rmi.c:24:
+include/protocol/rmi.h:30:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   30 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, uint16_t* device_id );
+      |            ^~~~~~~~~~~~~~~~~~~
+include/protocol/rmi.h:34:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   34 |     struct corsair_device_info* dev,
+      |            ^~~~~~~~~~~~~~~~~~~
+include/protocol/rmi.h:40:36: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   40 | corsairlink_rmi_channel_id( struct corsair_device_info* dev );
+      |                                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:222:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  222 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/protocol/rmi.h:43:36: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   43 | corsairlink_rmi_product_id( struct corsair_device_info* dev );
+      |                                    ^~~~~~~~~~~~~~~~~~~
+include/protocol/rmi.h:47:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   47 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, uint8_t sensor_select );
+      |            ^~~~~~~~~~~~~~~~~~~
+include/protocol/rmi.h:51:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   51 |     struct corsair_device_info* dev,
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/protocol/rmi.h:58:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   58 |     struct corsair_device_info* dev,
+      |            ^~~~~~~~~~~~~~~~~~~
+include/protocol/rmi.h:65:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   65 |     struct corsair_device_info* dev,
+      |            ^~~~~~~~~~~~~~~~~~~
+include/protocol/rmi.h:72:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   72 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, double* watts );
+      |            ^~~~~~~~~~~~~~~~~~~
+In file included from protocol/platinum/core.c:20:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:227:24: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  227 |                 struct corsair_device_info* dev,
+      |                        ^~~~~~~~~~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/rmi.h:76:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   76 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, double* volts );
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/rmi.h:80:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   80 |     struct corsair_device_info* dev,
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/rmi.h:87:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   87 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, uint16_t* mode );
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/rmi.h:91:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, uint16_t* pwm );
+      |            ^~~~~~~~~~~~~~~~~~~
+include/protocol/rmi.h:95:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   95 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, uint16_t* pwm_percent );
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:233:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  233 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/protocol/rmi.h:99:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   99 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, uint16_t* status );
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/rmi.h:103:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  103 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, uint32_t* v32 );
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/rmi.h:107:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  107 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, uint32_t* v32 );
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:241:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  241 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, double* volts );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/rmi.h:111:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |     struct corsair_device_info* dev,
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/rmi.h:118:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  118 |     struct corsair_device_info* dev,
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:244:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  244 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, double* watts );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/rmi.h:125:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  125 |     struct corsair_device_info* dev,
+      |            ^~~~~~~~~~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:247:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  247 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/rmi.c:34:13: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} [-Wincompatible-pointer-types]
+   34 |     .name = corsairlink_rmi_name,
+      |             ^~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:34:13: note: (near initialization for ‘corsairlink_driver_rmi.name’)
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:252:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  252 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:35:15: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} [-Wincompatible-pointer-types]
+   35 |     .vendor = corsairlink_rmi_vendor,
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:35:15: note: (near initialization for ‘corsairlink_driver_rmi.vendor’)
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/rmi.c:36:16: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} [-Wincompatible-pointer-types]
+   36 |     .product = corsairlink_rmi_product,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:36:16: note: (near initialization for ‘corsairlink_driver_rmi.product’)
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+drivers/rmi.c:37:18: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint16_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, short unsigned int *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint16_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, short unsigned int *)’} [-Wincompatible-pointer-types]
+   37 |     .device_id = corsairlink_rmi_device_id,
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:37:18: note: (near initialization for ‘corsairlink_driver_rmi.device_id’)
+drivers/rmi.c:38:19: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, char *, unsigned char)’} [-Wincompatible-pointer-types]
+   38 |     .fw_version = corsairlink_rmi_firmware_id,
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:38:19: note: (near initialization for ‘corsairlink_driver_rmi.fw_version’)
+include/driver.h:258:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  258 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:41:21: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} [-Wincompatible-pointer-types]
+   41 |             .read = corsairlink_rmi_temperature,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:41:21: note: (near initialization for ‘corsairlink_driver_rmi.temperature.read’)
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+drivers/rmi.c:45:31: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, double *)’ from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, double *)’ [-Wincompatible-pointer-types]
+   45 |             .supply_voltage = corsairlink_rmi_power_supply_voltage,
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:45:31: note: (near initialization for ‘corsairlink_driver_rmi.power.supply_voltage’)
+drivers/rmi.c:46:30: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, double *)’ from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, double *)’ [-Wincompatible-pointer-types]
+   46 |             .total_wattage = corsairlink_rmi_power_total_wattage,
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:46:30: note: (near initialization for ‘corsairlink_driver_rmi.power.total_wattage’)
+drivers/rmi.c:47:30: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char)’} [-Wincompatible-pointer-types]
+   47 |             .sensor_select = corsairlink_rmi_sensor_select,
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:47:30: note: (near initialization for ‘corsairlink_driver_rmi.power.sensor_select’)
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+drivers/rmi.c:48:24: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} [-Wincompatible-pointer-types]
+   48 |             .voltage = corsairlink_rmi_output_volts,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:48:24: note: (near initialization for ‘corsairlink_driver_rmi.power.voltage’)
+include/driver.h:264:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  264 |             struct corsair_device_info* dev,
+      |                    ^~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:49:25: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} [-Wincompatible-pointer-types]
+   49 |             .amperage = corsairlink_rmi_output_amps,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:49:25: note: (near initialization for ‘corsairlink_driver_rmi.power.amperage’)
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+drivers/rmi.c:50:24: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint8_t,  double *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned char,  double *)’} [-Wincompatible-pointer-types]
+   50 |             .wattage = corsairlink_rmi_output_watts,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:50:24: note: (near initialization for ‘corsairlink_driver_rmi.power.wattage’)
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+drivers/rmi.c:54:24: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint32_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned int *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint32_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned int *)’} [-Wincompatible-pointer-types]
+   54 |             .powered = corsairlink_rmi_time_powered,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:54:24: note: (near initialization for ‘corsairlink_driver_rmi.psu_time.powered’)
+drivers/rmi.c:55:23: warning: initialization of ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint32_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned int *)’} from incompatible pointer type ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, uint32_t *)’ {aka ‘int (*)(struct corsair_device_info *, struct libusb_device_handle *, unsigned int *)’} [-Wincompatible-pointer-types]
+   55 |             .uptime = corsairlink_rmi_time_uptime,
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/rmi.c:55:23: note: (near initialization for ‘corsairlink_driver_rmi.psu_time.uptime’)
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:273:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  273 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, uint32_t* v32 );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:276:20: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+  276 |             struct corsair_device_info* dev, struct libusb_device_handle* handle, uint32_t* v32 );
+      |                    ^~~~~~~~~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+drivers/unsupported.c:24:82: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   24 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, struct led_control* ctrl )
+      |                                                                                  ^~~~~~~~~~~
+drivers/unsupported.c:24:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   24 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, struct led_control* ctrl )
+      |            ^~~~~~~~~~~~~~~~~~~
+drivers/unsupported.c:32:82: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   32 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, struct fan_control* ctrl )
+      |                                                                                  ^~~~~~~~~~~
+drivers/unsupported.c:32:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   32 |     struct corsair_device_info* dev, struct libusb_device_handle* handle, struct fan_control* ctrl )
+      |            ^~~~~~~~~~~~~~~~~~~
+drivers/unsupported.c:42:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   42 |     struct pump_control* ctrl )
+      |            ^~~~~~~~~~~~
+drivers/unsupported.c:40:12: warning: ‘struct corsair_device_info’ declared inside parameter list will not be visible outside of this definition or declaration
+   40 |     struct corsair_device_info* dev,
+      |            ^~~~~~~~~~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o lowlevel/platinum.o lowlevel/platinum.c
+In file included from protocol/platinum/core.c:23:
+include/protocol/platinum.h:175:12: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  175 |     struct led_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:196:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  196 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:202:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  202 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:208:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  208 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:214:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:220:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  220 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:226:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  226 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:232:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  232 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:238:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  238 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:244:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  244 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:250:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  250 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:256:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  256 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:262:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  262 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:268:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  268 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:279:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  279 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/protocol/platinum.h:285:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  285 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/protocol/platinum.h:291:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  291 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/protocol/platinum.h:297:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  297 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/protocol/platinum.h:303:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  303 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/protocol/platinum.h:309:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  309 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/protocol/platinum.h:315:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  315 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/protocol/platinum.h:321:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  321 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/protocol/platinum.h:327:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  327 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+cc -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -c -o lowlevel/rmi.o lowlevel/rmi.c
+In file included from protocol/platinum/temperature.c:20:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+In file included from protocol/rmi/core.c:23:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+In file included from protocol/platinum/temperature.c:22:
+include/protocol/platinum.h:175:12: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  175 |     struct led_control* ctrl );
+      |            ^~~~~~~~~~~
+In file included from protocol/rmi/power.c:23:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:196:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  196 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:202:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  202 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:208:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  208 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:214:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/protocol/platinum.h:220:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  220 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:226:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  226 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:232:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  232 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:238:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  238 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:244:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  244 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:250:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  250 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:256:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  256 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:262:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  262 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:268:12: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  268 |     struct fan_control* ctrl );
+      |            ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:279:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  279 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/protocol/platinum.h:285:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  285 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/protocol/platinum.h:291:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  291 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/protocol/platinum.h:297:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  297 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/protocol/platinum.h:303:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  303 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/protocol/platinum.h:309:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  309 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/protocol/platinum.h:315:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  315 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/protocol/platinum.h:321:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  321 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/protocol/platinum.h:327:12: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  327 |     struct pump_control* ctrl );
+      |            ^~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+In file included from protocol/rmi/temperature.c:23:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+In file included from protocol/rmi/time.c:23:
+include/driver.h:91:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   91 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:96:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:101:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  101 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:106:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  106 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:111:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  111 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:116:20: warning: ‘struct led_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  116 |             struct led_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:124:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  124 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:131:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  131 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:136:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  136 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:141:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  141 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:146:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  146 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:151:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  151 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:156:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  156 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:161:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  161 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:166:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  166 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:171:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  171 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:176:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  176 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:181:24: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  181 |                 struct fan_control* ctrl );
+      |                        ^~~~~~~~~~~
+include/driver.h:187:20: warning: ‘struct fan_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  187 |             struct fan_control* ctrl );
+      |                    ^~~~~~~~~~~
+include/driver.h:199:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  199 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:204:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  204 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:209:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  209 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:214:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  214 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:219:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  219 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:224:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  224 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:229:24: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  229 |                 struct pump_control* ctrl );
+      |                        ^~~~~~~~~~~~
+include/driver.h:235:20: warning: ‘struct pump_control’ declared inside parameter list will not be visible outside of this definition or declaration
+  235 |             struct pump_control* ctrl );
+      |                    ^~~~~~~~~~~~
+protocol/platinum/temperature.c: In function ‘corsairlink_platinum_temperature’:
+protocol/platinum/temperature.c:75:22: warning: implicit declaration of function ‘crc8ccitt’ [-Wimplicit-function-declaration]
+   75 |     commands[0x3F] = crc8ccitt(commands+1, 62);
+      |                      ^~~~~~~~~
+cc main.o device.o logic/print.o logic/scan.o logic/settings/psu.o logic/settings/psu_status_output.o drivers/platinum.o drivers/rmi.o drivers/unsupported.o protocol/platinum/core.o protocol/platinum/crc.o protocol/platinum/temperature.o protocol/rmi/core.o protocol/rmi/power.o protocol/rmi/temperature.o protocol/rmi/time.o lowlevel/platinum.o lowlevel/rmi.o -march=native -mtune=native -O2 -pipe -std=c99 -O2 -march=native -mtune=native -Iinclude -I/usr/include/libusb-1.0 -g -I/usr/include/libusb-1.0  -DVERSION=\"v0.9.0.0-b75a\" -lm -lusb-1.0 -lusb-1.0  -o OpenCorsairLink.elf
+/usr/bin/ld: main.o: warning: relocation against `corsairlink_driver_asetekpro' in read-only section `.text.startup'
+/usr/bin/ld: main.o: in function `main':
+/srv/git-access/OpenCorsairLink/main.c:86:(.text.startup+0x49): undefined reference to `options_parse'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:131:(.text.startup+0xed): undefined reference to `corsairlink_driver_commanderpro'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:135:(.text.startup+0xfd): undefined reference to `corsairlink_driver_asetek'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:139:(.text.startup+0x10d): undefined reference to `corsairlink_driver_asetekpro'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:143:(.text.startup+0x11d): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:74:(.text.startup+0x168): undefined reference to `options_print'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:149:(.text.startup+0x22c): undefined reference to `hydro_platinum_settings'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:133:(.text.startup+0x273): undefined reference to `commanderpro_settings'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:137:(.text.startup+0x2a9): undefined reference to `hydro_asetek_settings'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:141:(.text.startup+0x2df): undefined reference to `hydro_asetekpro_settings'
+/usr/bin/ld: /srv/git-access/OpenCorsairLink/main.c:145:(.text.startup+0x315): undefined reference to `hydro_coolit_settings'
+/usr/bin/ld: device.o:(.data.rel+0x48): undefined reference to `corsairlink_driver_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x50): undefined reference to `corsairlink_lowlevel_asetek'
+/usr/bin/ld: device.o:(.data.rel+0xa8): undefined reference to `corsairlink_driver_asetek'
+/usr/bin/ld: device.o:(.data.rel+0xb0): undefined reference to `corsairlink_lowlevel_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x108): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x110): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x168): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x170): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x1c8): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x1d0): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x228): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x230): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x288): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x290): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x2e8): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x2f0): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x348): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x350): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x3a8): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x3b0): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x408): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x410): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x468): undefined reference to `corsairlink_driver_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x470): undefined reference to `corsairlink_lowlevel_coolit'
+/usr/bin/ld: device.o:(.data.rel+0x4c8): undefined reference to `corsairlink_driver_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x4d0): undefined reference to `corsairlink_lowlevel_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x528): undefined reference to `corsairlink_driver_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x530): undefined reference to `corsairlink_lowlevel_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x588): undefined reference to `corsairlink_driver_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x590): undefined reference to `corsairlink_lowlevel_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x5e8): undefined reference to `corsairlink_driver_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x5f0): undefined reference to `corsairlink_lowlevel_asetek'
+/usr/bin/ld: device.o:(.data.rel+0x648): undefined reference to `corsairlink_driver_commanderpro'
+/usr/bin/ld: device.o:(.data.rel+0x650): undefined reference to `corsairlink_lowlevel_commanderpro'
+/usr/bin/ld: device.o:(.data.rel+0x6a8): undefined reference to `corsairlink_driver_commanderpro'
+/usr/bin/ld: device.o:(.data.rel+0x6b0): undefined reference to `corsairlink_lowlevel_commanderpro'
+/usr/bin/ld: device.o:(.data.rel+0x708): undefined reference to `corsairlink_driver_commanderpro'
+/usr/bin/ld: device.o:(.data.rel+0x710): undefined reference to `corsairlink_lowlevel_commanderpro'
+/usr/bin/ld: device.o:(.data.rel+0x768): undefined reference to `corsairlink_driver_commanderpro'
+/usr/bin/ld: device.o:(.data.rel+0x7c8): undefined reference to `corsairlink_driver_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0x7d0): undefined reference to `corsairlink_lowlevel_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0x828): undefined reference to `corsairlink_driver_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0x830): undefined reference to `corsairlink_lowlevel_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0x888): undefined reference to `corsairlink_driver_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0x890): undefined reference to `corsairlink_lowlevel_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0x8e8): undefined reference to `corsairlink_driver_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0x8f0): undefined reference to `corsairlink_lowlevel_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0x948): undefined reference to `corsairlink_driver_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0x950): undefined reference to `corsairlink_lowlevel_asetekpro'
+/usr/bin/ld: device.o:(.data.rel+0xa68): undefined reference to `corsairlink_driver_dongle'
+/usr/bin/ld: device.o:(.data.rel+0xa70): undefined reference to `corsairlink_lowlevel_dongle'
+/usr/bin/ld: device.o:(.data.rel+0xac8): undefined reference to `corsairlink_driver_dongle'
+/usr/bin/ld: device.o:(.data.rel+0xad0): undefined reference to `corsairlink_lowlevel_dongle'
+/usr/bin/ld: device.o:(.data.rel+0xf48): undefined reference to `corsairlink_driver_dongle'
+/usr/bin/ld: device.o:(.data.rel+0xf50): undefined reference to `corsairlink_lowlevel_dongle'
+/usr/bin/ld: device.o:(.data.rel+0xfa8): undefined reference to `corsairlink_driver_dongle'
+/usr/bin/ld: device.o:(.data.rel+0xfb0): undefined reference to `corsairlink_lowlevel_dongle'
+/usr/bin/ld: device.o:(.data.rel+0x1008): undefined reference to `corsairlink_driver_dongle'
+/usr/bin/ld: device.o:(.data.rel+0x1010): undefined reference to `corsairlink_lowlevel_dongle'
+/usr/bin/ld: device.o:(.data.rel+0x1068): undefined reference to `corsairlink_driver_dongle'
+/usr/bin/ld: device.o:(.data.rel+0x1070): undefined reference to `corsairlink_lowlevel_dongle'
+/usr/bin/ld: drivers/platinum.o:(.data.rel+0x68): undefined reference to `corsairlink_platinum_fan_count'
+/usr/bin/ld: drivers/platinum.o:(.data.rel+0x70): undefined reference to `corsairlink_platinum_fan_mode_read'
+/usr/bin/ld: drivers/platinum.o:(.data.rel+0x78): undefined reference to `corsairlink_platinum_fan_mode_read_rpm'
+/usr/bin/ld: drivers/platinum.o:(.data.rel+0xc8): undefined reference to `corsairlink_platinum_fan_speed'
+/usr/bin/ld: drivers/platinum.o:(.data.rel+0xd0): undefined reference to `corsairlink_platinum_fan_print_mode'
+/usr/bin/ld: drivers/platinum.o:(.data.rel+0xd8): undefined reference to `corsairlink_platinum_pump_mode_read'
+/usr/bin/ld: drivers/platinum.o:(.data.rel+0x110): undefined reference to `corsairlink_platinum_pump_speed'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:89: OpenCorsairLink.elf] Error 1

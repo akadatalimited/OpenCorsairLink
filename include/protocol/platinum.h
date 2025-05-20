@@ -16,6 +16,8 @@
  * along with OpenCorsairLink.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
+
 #ifndef _PROTOCOL_PLATINUM_H
 #define _PROTOCOL_PLATINUM_H
 
